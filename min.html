@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>min</title>
+</head>
+<body>
+<script>
+  let  arr2 = [-1,4,5,5,6,7,6];
+  let max = arr2.length;
+  var min =arr2[0];
+  let a = 0;
+
+   function min01(min) {
+       if(arr2.length==0){return -1;};
+       for(let i = 1 ; i<max;i++){
+           if(min>arr2[i]){
+               min = arr2[i];
+                a = i;
+           }
+
+       }
+       return a;
+
+   }
+   min01(min);
+   if(min01()<0){document.write('day la mot mang rong')}
+   else {document.write('gia tri nho nhat cua mang la : '+arr2[min01()])};
+</script>
+</body>
+</html>
